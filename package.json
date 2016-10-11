@@ -1,0 +1,28 @@
+{
+  "name": "rollup-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify -t [ rollupify --config rollup.config.js ] src/index.js -o src/output.js",
+    "compress": "uglifyjs --compress --mangle -o src/output.min.js src/output.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "ruff",
+  "license": "ISC",
+  "dependencies": {
+    "babel-preset-es2015-rollup": "^1.2.0",
+    "babel-preset-react": "^6.16.0",
+    "browserify": "^13.1.0",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "rollup": "^0.36.3",
+    "rollup-plugin-babel": "^2.6.1",
+    "rollup-plugin-commonjs": "^5.0.4",
+    "rollup-plugin-node-resolve": "^2.0.0",
+    "rollup-plugin-replace": "^1.1.1",
+    "rollupify": "^0.3.4",
+    "uglify-js": "^2.7.3"
+  }
+}
